@@ -1,0 +1,10 @@
+^C:\USERS\USER\ONEDRIVE\РАБОЧИЙ СТОЛ\PP\CMAKEFILES\247CDAB8B2DE2E963E9C15736CDE1417\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Desktop/Testik/Testik "-BC:/Users/User/OneDrive/Рабочий стол/PP" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/User/OneDrive/Рабочий стол/PP/Testik.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
